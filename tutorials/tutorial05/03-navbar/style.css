@@ -3,10 +3,32 @@ html {
 }
 
 body * {
-    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    list-style-type: none;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    flex: content;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    justify-content: space-between;
 }
