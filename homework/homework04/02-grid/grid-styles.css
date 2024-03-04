@@ -5,8 +5,43 @@ body {
 }
 
 .grid-container {
+    display: grid;
     height: 100vh;
-    /* you will add addition rules for the container here  */
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-/* create your child rules here:  */
+.item-1 {
+   display: grid; 
+   grid-column: 1/ span 3;
+   grid-row: 1/ 1;
+   background-color: rgb(255, 215, 225);
+}
+
+.item-2 {
+    display: grid; 
+    grid-column: 3/ span 3;
+    grid-row: 2/ 2;
+    background-color: rgb(255, 215, 225);
+ }
+
+ .item-3 {
+    display: grid; 
+    grid-column: 1/ span 3;
+    grid-row: 3/ 3;
+    background-color: rgb(255, 215, 225);
+ }
+
+ .item-4 {
+    display: grid; 
+    grid-column: 3/ span 3;
+    grid-row: 4/ 4;
+    background-color: rgb(255, 215, 225);
+ }
+
+ .item-5 {
+    display: grid; 
+    grid-column: 1/ span 3;
+    grid-row: 5/ 5;
+    background-color: rgb(255, 215, 225);
+ }

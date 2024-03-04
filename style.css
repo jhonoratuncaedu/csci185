@@ -1,8 +1,10 @@
 header {
+    display: flex;
     background-color: blanchedalmond;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 body {
