@@ -4,17 +4,18 @@ body *{
 
 header {
     display: flex;
-    background-color: rgb(254, 230, 193);
+    background-color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 20px;
     margin-bottom: 20px;
     justify-content: center;
+    border: 4px solid red;
 }
 
 body {
     color: darkslategray;
-    margin-left: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid black;
 }
 
 main {
@@ -23,14 +24,16 @@ main {
     grid-template-rows: 50fr 50fr 50fr 50fr 50fr 50fr 50fr;
     gap: 15px;
     min-height: 90vh;
+    border: 2px solid black;
 }
 
 section {
-    background-color: rgb(255, 240, 218);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 2px solid black;
 }
 
 #tutorials {
