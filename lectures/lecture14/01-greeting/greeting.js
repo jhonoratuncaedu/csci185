@@ -1,7 +1,0 @@
-function sayHello() {
-
-}
-
-function sayGoodbye() {
-
-}
