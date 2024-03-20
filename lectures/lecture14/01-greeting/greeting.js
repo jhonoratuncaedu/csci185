@@ -1,0 +1,7 @@
+function sayHello() {
+
+}
+
+function sayGoodbye() {
+
+}
