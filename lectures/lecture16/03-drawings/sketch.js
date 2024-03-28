@@ -1,8 +1,8 @@
 function setup() {
     const canvasWidth = window.innerWidth;
-    const canvasHeight = window.innerHeight; 
+    const canvasHeight = window.innerHeight;
     createCanvas(canvasWidth, canvasHeight);
-    background("pink");
+    background("lightblue");
 
     /* Use the drawing functions to draw a picture. Ideas:
         * Draw an animal
@@ -11,13 +11,45 @@ function setup() {
         * Draw some abstract art
     */
 
+    // https://p5js.org/reference/#/p5/rect
+    fill('brown');
+    strokeWeight(0);
+    rect(700, 500, 150, 500);
+
     // https://p5js.org/reference/#/p5/circle
-    fill("teal")
-    circle(550, 100, 100);
+    fill("green")
+    circle(875, 500, 300);
+
+    // https://p5js.org/reference/#/p5/circle
+    fill("green")
+    circle(650, 500, 300);
+
+    // https://p5js.org/reference/#/p5/circle
+    fill("green")
+    circle(775, 375, 300);
+
+    // https://p5js.org/reference/#/p5/ellipse
+    fill('aqua');
+    ellipse(1500, 450, 175, 100);
+
+    // https://p5js.org/reference/#/p5/circle
+    fill("black")
+    circle(1500, 475, 100);
+
+    // https://p5js.org/reference/#/p5/circle
+    fill("black")
+    circle(1500, 425, 100);
+
+    // https://p5js.org/reference/#/p5/circle
+    fill("yellow")
+    circle(1500, 450, 100);
 
     // https://p5js.org/reference/#/p5/rect
-    fill('hotpink')
-    rect(30, 20, 55, 55);
+    fill('black');
+    strokeWeight(0);
+    rect(1450, 444, 100, 25);
+
+
 
     // add your drawing here:
     // https://p5js.org/reference/#/p5/point
@@ -26,14 +58,12 @@ function setup() {
     // https://p5js.org/reference/#/p5/text
     // text("Here is some text", 200, 40);
 
-    // https://p5js.org/reference/#/p5/ellipse
-    // fill('red');
-    // ellipse(100, 200, 60, 100);
+
 
     // Other shapes...
     // Polygon: https://p5js.org/reference/#/p5/beginShape
     // Line: https://p5js.org/reference/#/p5/line
-    
+
     // Curve: https://p5js.org/reference/#/p5/curve
 
 
