@@ -22,7 +22,20 @@ function drawPlayer() {
 function movePlayer(ev) {
     // open the console in your browser to see what happens :)
     console.log(ev.code);
+    if (ev.code === "ArrowUp") {
+        y = y - 50;
+    }
+    else if (ev.code === "ArrowLeft") {
+        x = x - 50;
+    }
+    else if (ev.code === "ArrowRight") {
+        x = x + 50;
+    }
+    if (ev.code === "ArrowDown") {
+        y = y + 50;
 
+    }
+    
     // re-draw the player
     drawPlayer();
 }

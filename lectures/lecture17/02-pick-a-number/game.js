@@ -7,7 +7,17 @@ function generateRandomNumber(low, high) {
 const secret = generateRandomNumber(1, 100);
 console.log(secret);
 
-// Your task:
+
 function check() {
-    // your code here
+    const guess = Number(document.querySelector ("#guess").value);
+    const messageEl = document.querySelector("#message");
+    if (guess > secret) {
+        messageEl.innerHTML = "Too High";
+    }
+    if (guess < secret) {
+        messageEl.innerHTML = "Too Low";
+    }
+    if (guess = secret) {
+        messageEl.innerHTML = "YOU WIN";
+    }
 }
