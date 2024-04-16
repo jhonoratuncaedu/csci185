@@ -17,17 +17,27 @@ function showImage() {
     console.log("Show image", idx);
     const img = document.querySelector ("#theimage")
     img.src = photos[idx];
+    const caption = document.querySelector("#theimage");
+    caption.innerHTML=`Image (${idx+1}) of 10`;
 }
 
 function forward() {
-    idx += 1;
+    if (idx === 9){
+        idx=0;
+    } else {
+        idx+=1;
+    }
+    console.log(idx);
     showImage();
 }
 
 function back() {
-    idx -= 1;
+    if (idx === 0){
+        idx=9;
+    } else {
+        idx-=1;
+    }
+    console.log(idx);
     showImage();
 }
 
-// Also target caption
-// Set less that 0 to 9 / more than 9 to 0 
