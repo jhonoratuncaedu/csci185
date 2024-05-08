@@ -14,7 +14,7 @@ function search (ev) {
 
 async function getTracks (term) {
     console.log(`
-        get tracks from spotify based on the search term
+    get tracks from spotify based on the search term
         "${term}" and load them into the #tracks section 
         of the DOM...`);
 }
