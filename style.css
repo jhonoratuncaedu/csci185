@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -6,7 +6,7 @@ body * {
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(240, 230, 200);
 }
 
@@ -21,7 +21,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-  }
+}
 
 h2 {
     font-family: "Ojuju", sans-serif;
@@ -55,13 +55,63 @@ section {
 
 main {
     display: grid;
-    grid-template-columns: 20fr 20fr 20fr 20fr;
-    grid-template-rows: 50fr 50fr 50fr 50fr 50fr 50fr 50fr;
-    gap: 15px;
-    min-height: 90vh;
+    grid-template-columns: repeat(6, 1fr); /* Increased columns to 6 for a broader view */
+    grid-template-rows: repeat(4, 1fr); /* Adjusted rows */
+    gap: 10px; /* Maintain a small gap */
+    min-height: 70vh; /* Reduced overall height */
     margin: 0 auto;
 }
-div{
+
+#tutorials {
+    grid-column: 1 / span 3; /* Adjusted to fit the new grid */
+    grid-row: 1 / span 2;
+    background-image: url('https://cdn.vox-cdn.com/thumbor/Qna0_2SYCIR72BE87ZZCnSgW8pM=/0x0:7583x5058/1200x800/filters:focal(3186x1923:4398x3135)/cdn.vox-cdn.com/uploads/chorus_image/image/67348417/Matcha_Lover_Only_2.0.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#homework {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1; /* Reduced row span */
+    background-image: url('https://aytzchayim.com/wp-content/uploads/2022/06/289889840_10210166947848155_3600047032672070336_n.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#quizzes {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 2; /* Placed next to tutorials */
+    background-image: url('https://www.thekitchenmccabe.com/wp-content/uploads/2019/03/Iced-Coconut-Chai-14-1-of-1-606x900.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#inspiration {
+    grid-column: 4 / span 3;
+    grid-row: 3 / span 1; /* Reduced row span */
+    background-image: url('https://i1.pickpik.com/photos/668/914/433/peppermint-peppermint-tea-mint-tee-thumb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#footer {
+    grid-column: 1 / span 6;
+    grid-row: 4 / span 1; /* Positioned footer to fit entire width */
+    background-image: url('https://i.pinimg.com/736x/10/87/34/108734a43ebab66ab43ac7e793bd8995.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
     opacity: 0;
     transition: all .5s;
     background: rgba(240, 230, 200, 0.900);
@@ -78,18 +128,24 @@ div{
     color: rgb(100, 60, 20);
     text-decoration: none;
 }
+
 .card div a:hover {
     font-style: italic;
     font-weight: bolder;
     color: rgb(0, 150, 0);
 }
+
 .card:hover div {
     opacity: 1;
 }
-.card:hover h2, .card:focus h2{
+
+.card:hover h2,
+.card:focus h2 {
     opacity: 0;
 }
-.card:hover div, .card:focus div{
+
+.card:hover div,
+.card:focus div {
     opacity: 100;
 }
 
@@ -103,89 +159,41 @@ section {
     flex-direction: column;
 }
 
-#tutorials {
-    grid-column: 1/ span 2;
-    grid-row: 1/ span 2;
-    background-image: url('https://www.janeemichal.com/wp-content/uploads/2022/09/honeybees-field-of-flowers.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#homework {
-    grid-column: 1/ span 2;
-    grid-row: 3/ span 2;
-    background-image: url('https://buzzbee.com.au/cdn/shop/articles/Depositphotos_169218866_xl-2015.jpg?v=1626364716&width=5760');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#quizzes {
-    grid-column: 1/ span 2;
-    grid-row: 5/ span 2;
-    background-image: url('https://cdn.vox-cdn.com/thumbor/Qna0_2SYCIR72BE87ZZCnSgW8pM=/0x0:7583x5058/1200x800/filters:focal(3186x1923:4398x3135)/cdn.vox-cdn.com/uploads/chorus_image/image/67348417/Matcha_Lover_Only_2.0.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#inspiration {
-    grid-column: 3/ span 2;
-    grid-row: 1/ span 6;
-    background-image: url('https://i.redd.it/mivpgq5d3oh51.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-#footer {
-    grid-row: 7/ span 1;
-    grid-column: 1/ span 4;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/34/Melaleuca_alternifolia_%28Maria_Serena%29.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}  
-
 @media (max-width: 767px) {
     main {
-        grid-template-columns: 50fr;
-        grid-template-rows: 50fr 50fr 50fr 50fr 50fr 50fr 50fr 50fr 50fr 50fr 50fr 50fr;
+        grid-template-columns: 1fr; /* Changed to single column for mobile view */
+        grid-template-rows: repeat(12, 1fr); /* Adjusted rows */
     }
-    
+
     header {
         font-size: 15px;
     }
 
     #tutorials {
-        grid-column: 1/ span 1;
-        grid-row: 1/ span 2;
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
     }
 
     #homework {
-        grid-column: 1/ span 1;
-        grid-row: 3/ span 2;
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 2;
     }
 
     #inspiration {
-        grid-column: 1/ span 1;
-        grid-row: 5/ span 5;
+        grid-column: 1 / span 1;
+        grid-row: 5 / span 5;
     }
 
     #quizzes {
-        grid-column: 1/ span 1;
-        grid-row: 10/ span 2;
+        grid-column: 1 / span 1;
+        grid-row: 10 / span 2;
     }
 
     #footer {
-        grid-column: 1/ span 1;
-        grid-row: 12/ span 1;
+        grid-column: 1 / span 1;
+        grid-row: 12 / span 1;
     }
+
     #footer h2 {
         font-size: 50px;
     }
